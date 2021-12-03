@@ -1,3 +1,31 @@
+.body, html{
+    height: 100vh;
+}
+
+.main{
+    background-image: url('../Images/girl.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-resolution: from-image;
+    image-resolution: 300dpi;
+    image-resolution: from-image 300dpi;
+    image-resolution: 300dpi snap;
+    height: 100vh;
+}
+
+.contactmain{
+    background-image: url('../Images/ball.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-resolution: from-image;
+    image-resolution: 300dpi;
+    image-resolution: from-image 300dpi;
+    image-resolution: 300dpi snap;
+    height: 100vh;
+}
+
 .image{
     border-radius: 20px;
     -webkit-filter: sepia(100%);
@@ -6,6 +34,7 @@
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
     transition: transform .5s ease;
+    
 }
 
 .image:hover{
@@ -14,9 +43,38 @@
     transform: scale(1.5);
 }
 
+.projects {
+   
+    text-align:center;
+    opacity: 1;
+    background: transparent;
+    color:#fff;
+    border-radius:50%;
+    -webkit-animation: bounce .3s infinite alternate;
+    -moz-animation: bounce .3s infinite alternate;
+    animation: bounce .3s infinite alternate;
+  }
+  @-webkit-keyframes bounce {
+    to { -webkit-transform: scale(1.2); }
+  }
+  @-moz-keyframes bounce {
+    to { -moz-transform: scale(1.2); }
+  }
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+
+
+.aboutmain{
+    background: linear-gradient(-70deg,#8b999e 60%,#288a3d 40%);
+}
+
 .par {
     animation-duration: 3s;
     animation-name: slidein;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
   }
   
   @keyframes slidein {

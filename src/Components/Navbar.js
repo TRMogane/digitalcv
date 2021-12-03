@@ -15,13 +15,13 @@ export default function Navbar() {
                     <Link to="/home" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/projects" className="nav-link">Portfolio</Link>
+                    <Link to="/projects" className="nav-link">Projects</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/about" className="nav-link">About Me</Link> 
+                    <Link to="/about" className="nav-link"> My Experience</Link> 
                     </li>
                     <li className="nav-item">
-                    <Link to="/contact" className="nav-link">Contact Me</Link> 
+                    <Link to="/contact" className="nav-link">Get in Touch</Link> 
                     </li>
                     </ul>
                 </div>
