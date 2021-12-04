@@ -16,7 +16,7 @@ function App() {
           <Route path='/home' exact component={Home}/>
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact}/>
-          <Route path='/projects' component={myprojects} />
+         
         </Switch>
       </BrowserRouter>
     </div>

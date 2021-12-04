@@ -23,7 +23,7 @@ export default function About() {
                 <p className="text-center justify-content-center align-center my-2 blackquote">
                 Thabang Reneilwe Mogane
                 Cnr Samrand Ave & Watercress, 4843 Summerfields Estate, Centurion, Pretoria<br/>
-                <a href="maitto:t.r.lelaka2009@gmail.com">Email: t.r.lelaka2009@gmail.com</a> <br/>
+                <a href="mailto:t.r.lelaka2009@gmail.com">Email: t.r.lelaka2009@gmail.com</a> <br/>
                 Cell Phone: +27 71 851 1076
 
                 </p>
