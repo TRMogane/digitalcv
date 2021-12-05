@@ -1,10 +1,33 @@
-import React from 'react'
+import React,{Component} from 'react'
 import pic1 from '../Images/pic1.jpeg'
 import {Link} from 'react-router-dom'
 import '../styles/styles.css'
 import mainpic from '../Images/girl.jfif'
+import axios from 'axios'
 
-export default function Home() {
+export default class Home extends Component {
+   constructor(props){
+       super(props)
+
+   }
+
+   componentDidMount(){
+    var options = {
+        method: 'GET',
+        url: 'https://andruxnet-random-famous-quotes.p.rapidapi.com/',
+        params: {cat: 'famous', count: '10'},
+        headers: {
+          'x-rapidapi-host': 'andruxnet-random-famous-quotes.p.rapidapi.com',
+          'x-rapidapi-key': '6d17c96acfmshcacf4120691582fp17506cjsn14c7f35cf420'
+        }
+      };
+
+      axios.request(options).then(function (res){
+        console.log(res.data)
+      });
+   }
+
+   render(){
     return (
         <div className="main">
             <h1 className="text-center text-capitalize text-white">Welcome to my world</h1>
@@ -34,6 +57,11 @@ export default function Home() {
             <div className="projects">
                 <Link to="/projects" className="btn btn-info">See what i can do</Link>
             </div>
+
+            <div>
+
+            </div>
         </div>
     )
+   }
 }
